@@ -11,10 +11,10 @@
 
 ### Proposed changes to be made in order to test:
 1. To implement Dependency injection, The first change needed is to create an interface for each of the 4 Service Manager classes:    
- * FileExtensionManager, 
- * CrashLoggingService, 
- * EmailService and 
- * CorruptFileLoggingService.  
+    * FileExtensionManager, 
+    * CrashLoggingService, 
+    * EmailService and 
+    * CorruptFileLoggingService.  
 2. From within the Unit Test class a fake version of each of the service manager classes is made. 
 3. When writing the tests the fake version of the classes can be called this includes a what has been named the testableSystemMonitor class. So the test code is using the same methods but is able to test each one in isolation without calling the dependencys.
 ### Test Cases:
